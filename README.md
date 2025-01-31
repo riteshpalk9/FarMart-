@@ -3,7 +3,7 @@
 # Problem
 We have a huge log file (1 TB in size) with logs for multiple years. Each log starts with a date in the format YYYY-MM-DD. The task is to extract all logs for a specific date efficiently without loading the entire file into memory.
 
-Solution Steps
+# **Solution Steps**
 
 # Approach
 - **Indexing:** Create an index that maps dates to byte offsets in the file. This allows us to jump directly to the relevant part of the file.
