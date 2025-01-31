@@ -5,10 +5,10 @@ We have a huge log file (1 TB in size) with logs for multiple years. Each log st
 
 Solution Steps
 
-Approach
-Indexing: Create an index that maps dates to byte offsets in the file. This allows us to jump directly to the relevant part of the file.
-Binary Search: Use binary search to quickly locate the start and end positions of the logs for the specified date.
-Streaming: Read the file in chunks to avoid loading the entire file into memory.
+# Approach
+- **Indexing:** Create an index that maps dates to byte offsets in the file. This allows us to jump directly to the relevant part of the file.
+- **Binary Search:** Use binary search to quickly locate the start and end positions of the logs for the specified date.
+- **Streaming:** Read the file in chunks to avoid loading the entire file into memory.
 
 
 Create an Index:
