@@ -10,7 +10,7 @@ Solution Steps
 - **Binary Search:** Use binary search to quickly locate the start and end positions of the logs for the specified date.
 - **Streaming:** Read the file in chunks to avoid loading the entire file into memory.
 
-
+# 
 Create an Index:
 The script scans the log file once and creates an index.
 The index maps each date (e.g., 2024-12-01) to its starting position (byte offset) in the file.
@@ -26,16 +26,14 @@ Save the Logs:
 The extracted logs are saved to a file in the output folder, named output_YYYY-MM-DD.txt.
 How It Works
 
+# 
 First Run:
 The script scans the log file to create the index (this takes some time but only needs to be done once).
 It then extracts logs for the specified date and saves them to the output file.
 Subsequent Runs:
 The script uses the existing index to quickly find and extract logs for any date.
 
-Why It’s Efficient
-
-Saves Time: No need to scan the entire file every time.
-
-Saves Memory: Processes the file in chunks, so it works even on machines with limited RAM.
-
-Easy to Use: Just provide the date, and the script does the rest.
+**Why It’s Efficient**
+- Saves Time: No need to scan the entire file every time.
+- Saves Memory: Processes the file in chunks, so it works even on machines with limited RAM.
+- Easy to Use: Just provide the date, and the script does the rest.
